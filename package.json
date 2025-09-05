@@ -1,0 +1,15 @@
+{
+  "name": "counterwatch",
+  "version": "1.0.0",
+  "description": "Counter calculator for Overwatch 2. Made by Szymon Lato :3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.15.0"
+  }
+}
