@@ -14,6 +14,28 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Klasy {
+  Tank
+  Dps
+  Support
+}
+
 model Hero {
-  // to be continued
+  id           Int           @id @default(autoincrement())
+  name         String        @unique
+  role         Klasy
+  advice_with  String
+  advice_vs    String
+  Kontrowanie  Kontrowanie[] @relation(name: "sourceHero")
+  Kontrowanie2 Kontrowanie[] @relation(name: "targetHero")
+}
+
+model Kontrowanie {
+  id_relacji   Int   @id @default(autoincrement())
+  id1          Hero  @relation(name: "sourceHero", fields: [sourceHeroId], references: [id])
+  sourceHeroId Int
+  id2          Hero  @relation(name: "targetHero", fields: [targetHeroId], references: [id])
+  targetHeroId Int
+  counter_rate Float
+  synergy_rate Float
 }
