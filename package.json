@@ -4,7 +4,8 @@
   "description": "Counter calculator for Overwatch 2. Made by Szymon Lato :3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reset": "node ./backend/middleware/reset.js"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +20,12 @@
     "prisma": "^6.16.0",
     "ts-node": "^10.9.2"
   },
-  "type": "module",
   "devDependencies": {
+    "@eslint/js": "^9.35.0",
     "@types/node": "^24.3.3",
+    "eslint": "^9.35.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.4.0",
     "typescript": "^5.9.2"
   }
 }

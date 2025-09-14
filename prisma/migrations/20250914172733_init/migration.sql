@@ -1,5 +1,5 @@
 -- CreateEnum
-CREATE TYPE "public"."Klasy" AS ENUM ('Tank', 'Dps', 'Support');
+CREATE TYPE "public"."Klasy" AS ENUM ('tank', 'dps', 'support');
 
 -- CreateTable
 CREATE TABLE "public"."Hero" (

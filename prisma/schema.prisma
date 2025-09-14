@@ -15,9 +15,9 @@ datasource db {
 }
 
 enum Klasy {
-  Tank
-  Dps
-  Support
+  tank
+  dps
+  support
 }
 
 model Hero {
