@@ -61,4 +61,20 @@ const deleteHeroByName = async (req, res) => {
     }
 };
 
-module.exports = {getAllHeroes, getHeroesByRole, addHero, deleteHeroByName};
+const updateHero = async (req, res) => {
+    try {
+        const {id} = req.params;
+        console.log(id);
+        const data = req.body;
+        const updated = await prisma.hero.update({where : {
+                    id: Number(id),
+                },
+                data
+            });
+        if (updated) res.status(200).json({message: "Hero update done, sire", updated});
+    } catch (er) {
+        res.status(500).json({message: "Update failed", error: er});
+    }
+}
+
+module.exports = {getAllHeroes, getHeroesByRole, addHero, deleteHeroByName, updateHero};
