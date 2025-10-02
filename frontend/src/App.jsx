@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import './App.scss'
+// import { useState } from 'react'
+import './App.scss';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>To be continued...</h1>
+      <h1>Cycki</h1>
     </>
   )
 };
