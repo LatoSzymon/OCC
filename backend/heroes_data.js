@@ -42,8 +42,34 @@ const heroes = [
     {
         name: "Genji",
         role: "dps",
-        advice_with: "Genji in right hands play 1v5 matches, but it is nice to "
-    }, 
+        advice_with: "Genji in right hands play 1v5 matches, but not all your teammates are gods in playing this champ. Providing your Genji some sort of support would help you win a teamfight",
+        advice_vs: "Genji tends to dive deep into your backline, so try to use heroes that are good against high-mobile characters and cut him off so he cannot escape",
+    },
+
+    {
+        name: "Cassidy",
+        role: "dps",
+        advice_with: "Cassidy is very good at securing picks and covering your low-mobile healers, but has low mobility. Keep an eye on him, so you can provide help if he gets in trouble",
+        advice_vs: "If you are playing a high-mobile hero try to bait his flashbang, if you succeed he will be much less dangerous to you"
+    },
+
+    {
+        name: "D.va",
+        role: "tank",
+        advice_with: "D.va likes to dive deep into enemy team. If you have a feeling she goes too deep, stay behind. She has very effective way to escape. Do you?",
+        advice_vs: "D.va's key ability is her matrix. Good strategy is forcing her to use it as soon as the fight starts, so she remain defenceless. If you focus her then, your team can quickly put her mech down."
+    },
+
+    {
+        name: "Echo",
+        role: "dps",
+        advice_with: "Echo is very effective in melting singular targets, so try to supply your comp with aoe damage or long distance heal",
+        advice_vs: "Echo can eliminate single target very quick, but she lacks aoe damage so stick together. Also focus her when she uses her ult, because it is extremely dangerous with how quick she can gain ult in this form"
+    },
+
+    
+
+
     
     //write all heroes data  (work in progress)
 ];
